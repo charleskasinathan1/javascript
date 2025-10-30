@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Progress</title>
+</head>
+
+<body>
+    <form>
+        <input type="text" id="data" placeholder="Enter Name">
+        <button id="btn">click</button>
+    </form>
+    <script>
+        const btn_1 = document.getElementById("btn")
+        btn_1.addEventListener("click",(teashop)=>{
+
+            console.log(teashop);
+
+
+teashop.preventDefault()
+
+            const datafrominput = document.getElementById("data").value
+            alert(datafrominput)
+
+        })
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

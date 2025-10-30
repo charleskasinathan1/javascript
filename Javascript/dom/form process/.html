@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form process</title>
+</head>
+<input type="text" id="inputdatas" placeholder="search product">
+<button id="btn">click</button>
+<p id="result"></p>
+<img  src="" id="images" alt="order" >
+
+<body>
+    <script>
+        const btn=document.getElementById("btn")
+         btn.addEventListener('click',(i)=>{
+         const img=document.getElementById("images")
+         const data=document.getElementById("inputdatas").value
+         const result1=document.getElementById("result");
+         result1.textContent=`your search result:${result1}`
+         
+         if(data==="ajith"){
+            img.src="../asst/ajith.jpeg";
+            result1.textContent="your result ajith";
+         }else if(data==="vijay"){
+          img.src="../asst/download.jpeg";
+          result1.textContent="your result is vijay";
+         }else if(data==="suriya"){
+            img.src="../asst/suriya.jpeg";
+            result1.textContent="your result is suriya";
+         }else if(data==="rajini"){
+            img.src="../asst/rajini.jpeg";
+            result1.textContent="your result is rajini";
+         }else if(data==="dhanush"){
+          img.src="../asst/dhanush.jpeg"
+          result1.textContent="your result is dhanush";
+       
+         }else{
+            img.src=""
+         }
+         });
+    </script>
+
+    
+</body>
+</html>
